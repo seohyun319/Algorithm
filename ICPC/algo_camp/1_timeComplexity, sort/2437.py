@@ -23,3 +23,5 @@ for weight in weight_list:
     # 현재까지의 모든 무게 합
     answer += weight
 print(answer + 1) # 전 거 다 합친 거 + 1 
+
+# 처음이 1이 아니면 무조건 끝내면 됨. 1을 못 만들기 때문.
