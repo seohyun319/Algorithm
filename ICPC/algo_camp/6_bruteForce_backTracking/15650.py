@@ -23,3 +23,19 @@ def dfs(start):
       arr.pop()
 
 dfs(1)
+
+"""
+n, m = map(int, input().split())
+array = []
+
+def back(i):
+    if len(array) == m: # m개만큼 고름
+        print(*array)
+        return
+    for num in range(i, n): # 자식 노드에 대해: i부터 n까지의 수
+        array.append(num + 1) # 자식으로 이동
+        back(num + 1) # 오름차순 다음
+        array.pop() # 부모로 이동
+
+back(0)
+"""
